@@ -47,7 +47,22 @@ namespace feladat0521
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
-
+            // módosítjuk a kiválasztott terméket a szövegmezők aktuális értékeire
+            var Cikkszam = txCikkszam.Text;
+            var Megnevezes = txMegnevezes.Text;
+            var Ar = int.Parse(txAr.Text);
+            var Mennyiseg = int.Parse(txMennyiseg.Text);
+            foreach (var item in termekek)
+            {
+                if (item.Cikkszam == Cikkszam)
+                {
+                    item.Megnevezes = Megnevezes;
+                    item.Ar = Ar;
+                    item.Mennyiseg = Mennyiseg;
+                    break;
+                }
+            }
+            dgkeszlet.Items.Refresh();
         }
     }
 }

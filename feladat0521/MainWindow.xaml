@@ -13,7 +13,7 @@
         <TextBox x:Name="txMegnevezes" HorizontalAlignment="Left" Margin="10,123,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
         <TextBox x:Name="txAr" HorizontalAlignment="Left" Margin="10,162,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
         <TextBox x:Name="txMennyiseg" HorizontalAlignment="Left" Margin="10,199,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <Button Content="megjelenít" HorizontalAlignment="Left" Margin="40,237,0,0" VerticalAlignment="Top" Click="Button_Click_1"/>
+        <Button Content="módosít" HorizontalAlignment="Left" Margin="40,237,0,0" VerticalAlignment="Top" Click="Button_Click_1"/>
 
     </Grid>
 </Window>
