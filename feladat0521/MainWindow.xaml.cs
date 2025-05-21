@@ -63,6 +63,13 @@ namespace feladat0521
                 }
             }
             dgkeszlet.Items.Refresh();
+            // fájlba írás
+            var sw = new StreamWriter("keszlet.csv");
+            foreach (var item in termekek)
+            {
+                sw.WriteLine($"{item.Cikkszam};{item.Megnevezes};{item.Ar};{item.Mennyiseg}");
+            }
+            sw.Close();
         }
     }
 }
